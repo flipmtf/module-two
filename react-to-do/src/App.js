@@ -34,7 +34,7 @@ class App extends Component {
   }
 
   deleteTodo(todo) {
-    let filteredArray = this.state.todos.filter((item) => item!=todo);
+    let filteredArray = this.state.todos.filter((item) => item!==todo);
     this.setState({ todos:filteredArray });
   }
 
